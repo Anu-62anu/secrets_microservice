@@ -1,7 +1,7 @@
 const express = require('express');
 const statusRoutes = require('./routes/routes');
 const { notFoundHandler, globalErrorHandler } = require('./utils/errorHandler');
-const { getRuntimeFlags } = require('./services/configService');
+const { getRuntimeFlags } = require('./service/configService');
 
 const app = express();
 
