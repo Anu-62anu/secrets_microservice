@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getCoreConfig, getRuntimeFlags } from '../../src/services/configService';
+import { getCoreConfig, getRuntimeFlags } from '../../src/service/configService';
 
 describe('configService', () => {
   it('returns nulls when vars absent', () => {
