@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { getCoreConfig, getRuntimeFlags } = require('../services/configService');
+const { getCoreConfig, getRuntimeFlags } = require('../service/configService');
 
 const router = Router();
 
