@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package.json ./
 
 # Install dependencies using npm ci (faster and more reliable than npm install)
-RUN npm install --omit=dev && npm cache clean --force
+RUN npm ci --omit=dev && npm cache clean --force
 
 # Copy the rest of the application
 COPY . .
