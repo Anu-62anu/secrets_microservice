@@ -3,10 +3,10 @@ FROM node:20-slim
 WORKDIR /app
 
 # Copy package files (Docker will cache this layer if they don't change)
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Install dependencies using npm ci (faster and more reliable than npm install)
-RUN npm ci --omit=dev && npm cache clean --force
+RUN npm install --omit=dev && npm cache clean --force
 
 # Copy the rest of the application
 COPY . .
