@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use('/', routes);
+app.use('/', statusRoutes);
 
 // 404 + error handlers
 app.use('*', notFoundHandler);
